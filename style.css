@@ -1,0 +1,743 @@
+/*body{
+    margin: 30px;
+}*/
+*{
+    margin: 0;
+}
+/*Navigation-------------------------------------------------------------------------*/
+.nav{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.nav_links{
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+}
+
+.nav_links a{
+    justify-content: space-between;
+    text-decoration: none;
+    color: black;
+    margin-right: 20px;
+}
+
+/*INDEX--------------------------------------------------------------------------------*/
+/* Slideshow container */
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: 0;
+    margin-bottom: 100px;
+}
+  
+.controls {
+    display: flex;
+    position: absolute;
+    bottom: 20%;
+    right: 4%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    top: ;
+}
+
+.control-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.big-circle {
+    background: linear-gradient(180deg, rgba(187, 187, 187, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%);
+
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.small-circle {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+.small-circle:hover {
+    background-color: #555;
+}
+
+.prev {
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+}
+  .next {
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+  }
+
+  .text {
+    color: #f2f2f2;
+    padding: 8px 12px;
+    margin-left: 50px;
+    position: absolute;
+    bottom: 10px;
+    margin-bottom: 150px;
+    width: 40%;
+  }
+
+  .text h1{
+    font-size: 60px;
+    line-height: 72px;
+  }
+
+  .text h3 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28.5px;
+    text-align: left;
+  }
+
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+
+.main-goal{
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+
+.card-group{
+    display: flex;
+    justify-content:center;
+    margin-top: 30px;
+
+}
+
+.card{
+   background-color:#00000009; 
+   align-items: center;
+   width: 200px;
+   overflow: hidden;
+   margin: 20px;
+   padding: 50px;
+   text-align: center;
+}
+
+.card .goal-img{
+    border-radius: 100px;
+}
+
+.card .goal-img img{
+    width: 30%;
+    background-color: white;
+    margin-bottom: 50px;
+    padding: 30px;
+    clip-path: circle();
+}
+
+.goals .mission{
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.goals .mission h1{
+    margin: auto;
+    text-align: center;
+    width: 400px;
+}
+
+.video {
+    width: 500px;
+    overflow: hidden;
+}
+
+.video-note{
+    background-color: black;
+    display: inline-flex;
+    color: white;
+    width: 100%;
+    max-width: 100%;
+    padding-top: 200px;
+    padding-bottom: 100px;
+    gap: 150px;
+    overflow: hidden;
+}
+
+.vl {
+    border-left: 1px solid rgba(255, 255, 255, 0.352);
+    height: 100px;
+  }
+/*Openings*/
+.heading{
+    margin: auto;
+    text-align: center;
+}
+
+.heading .job-quest{
+    width: 60%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.apply-btn{
+    margin: auto;
+    text-align: center;
+}
+
+.apply-btn button{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: auto;
+}
+
+.text .paragraph{
+    margin-top: 40px;
+    color: black;
+}
+
+hr{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/*FOOTER------------------------------------------------------------------------*/
+.footer-main{
+    background-color: #F2F2F2;
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.footer-left{
+    width: 60%;
+}
+
+.footer-left .email-form{
+    padding: 30px;
+    margin-left: 100px;
+    padding-left: 0;
+}
+
+.email-form form {
+    position: relative;
+}
+
+.footer-left .email-form form input{
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    margin-right: 0;
+}
+
+.footer-left .email-form form button{
+    height: 100px;
+    width: 100px;
+    clip-path: circle();
+    background-color: black;
+    color: white;
+    top: -21px;
+    position: absolute;
+    right: 260px;
+    /*padding: 30px;
+    clip-path: circle();
+    background-color: black;
+    color: white;
+    top: -21px;
+    position: absolute;
+    right: 260px;*/
+}
+
+.footer-left .socials{
+    text-align: center;
+    display: flex;
+    margin-left: 100px;
+
+}
+
+.footer-left .socials img{
+    background-color: rgba(0, 0, 0, 0.073);
+    clip-path: circle();
+    border-style: none;
+    width: 20px;
+    padding: 10px;
+    margin-right: 10px;
+}
+/*
+.footer-left .socials{
+    display: flex;
+}
+
+.footer-left .socials img{
+    clip-path: circle();
+    padding: 0px;
+ 
+}
+
+border-style: none;
+margin: 10px;
+padding: 20px;
+background-color: rgba(0, 0, 0, 0.005);
+width: 30px;
+*/
+
+.footer-right{
+    width: 40%;
+    float: right;
+}
+
+.footer-right h3{
+    color: grad;
+}
+
+.footer-right .nav_links{
+    justify-content: flex-start;
+    display: flex;
+    align-items: center;
+    margin-top: 30PX;
+}  
+    
+.footer-right .nav_links a{
+    justify-content: space-between;
+    text-decoration: none;
+    color: black;
+    margin-right: 40px;
+}
+
+.footer-right .footer-extra-explore{
+    margin-top: 20px;
+    justify-content: flex-start;
+
+}
+
+.footer-right .footer-extra-explore a{
+    color: black;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.footer-note{
+    margin-bottom: 20px;
+    display: flex;
+    float: right;
+
+}
+
+.footer-note a{
+    color: black;
+    margin-right: 50px;
+}
+
+/*ABOUT US-----------------------------------------------------------------*/
+.about{
+    display: flex;
+    overflow: hidden;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.about .about_img{
+    width: 50%;
+}
+
+.about .about_img img{
+    max-width: 100%;
+}
+
+.about .about_body{
+    width: 50%;
+    margin: auto;
+}
+
+.about .about_body p{
+    font-size: 30px;
+    width: 50%;
+    margin: auto;
+}
+
+.leaders{
+    background-color: black;
+    overflow: hidden;
+}
+
+.leaders-main{
+    display: flex;
+    margin: auto;
+}
+
+.leaders .leaders_body{
+    width: 30%;
+    margin: auto;
+    padding-left: 50px;
+}
+
+.leaders .leaders_body p{
+    color: white;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.leaders .leaders_img{
+    width: 70%;
+}
+
+.leaders_img .row{
+    width: 80%;
+    display: flex;
+    margin: auto;
+    margin-left: 50px;
+}
+
+.leaders .leaders_img .person{
+    margin: auto;
+    margin-top: 20px;
+    
+}
+
+.leaders .leaders_img .person img{
+    width: 80%;
+    margin: auto;
+}
+
+.leaders .leaders_img .person p{
+    color: white;
+    text-align: left;
+}
+
+.leaders-extra{
+    color: white;
+    margin: auto;
+    display: flex;
+    text-align: center;
+    margin-top: 50px;
+    padding-bottom: 100px;
+}
+
+.leaders-extra .txt{
+    margin: auto;
+    width: 30%;
+}
+
+.leaders-extra .btn{
+    text-align: center;
+    margin: auto;
+}
+
+.leaders-extra .btn button{
+    padding: 20px;
+}
+
+/* CONTACT -----------------------------------------------------------------------------*/
+
+.contact_header {
+    margin: auto;
+    text-align: center;
+}
+
+.contact_btm{
+    background-color: black;
+    color: white;
+}
+
+.contact_btm .contact_btm_body .contact_btm_header{
+    text-align: center;
+}
+
+.contact_form
+
+.contact_form form{
+    width: 90%;
+    max-width: 50%;
+}
+
+.contact_form form .row{
+    display: flex;
+}
+
+.contact_form form input{
+    gap: 30px;
+    height: 30px;
+}
+
+.contact_form form input, textarea{
+    margin-bottom: 30px;
+    width: 90%;
+    margin-left: 30px;
+    margin-right: 30px;
+    
+}
+
+.contact_btm{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.contact_btm_header h1{
+    padding-bottom: 50px;
+}
+
+.contact_btm_info .row{
+    display: flex;
+    margin: auto;
+}
+
+.contact_btm_info .row .address{
+    margin: auto;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.contact_btm_info .row .address .address_main{
+    margin-left: 30px;
+    width: 150px;
+}
+
+.contact_btm_info .row .address .address_img img{
+    border-radius: 10px;
+}
+
+.contact-btm-socials{
+    margin: auto;
+    text-align: center;
+}
+
+.contact-btm-socials .socials img{
+    background-color: white;
+    clip-path: circle();
+    border-style: none;
+    width: 30px;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.contact_form form button{
+    margin-left: 30px;
+    margin-top: 30px;
+    background-color: black;
+    color: white;
+    padding: 10px 30px;
+}
+
+.contact_form{
+    margin-bottom: 50px;
+}
+
+/* Career */
+.values h1{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.values-body .row{
+    display: flex;
+    margin: auto;
+    width: 80%;
+}
+.single-v {
+    width: 50%;
+}
+.accordion {
+    background-color: #F9F9F9;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 80%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    margin-left: 30px;
+    align-items: center;
+
+  }
+
+  .accordion img{
+    width: 30px;
+    padding: 10px;
+    background-color: white;
+    clip-path: circle();
+  }
+  
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  .accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  
+  .panel {
+    margin-bottom: 20px;
+    margin-left: 10px;
+    width: 50%;
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+.jobs{
+    background-color: black;
+    color: white;
+    padding-top: 100px;
+}
+
+.current-header h1{
+    margin-left: 30px;
+    width: 50px;
+}
+
+.list .list-item{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.160);
+    padding: 20px;
+    margin: auto;
+    margin-top: 20px; 
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: center;
+}
+
+.list .list-item img{
+    width: 30px;
+    clip-path: circle();
+    padding: 20px;
+    background-color: white;
+}
+
+.list .list-item h4{
+    width: 200px;
+}
+
+.list .list-item .job-desc{
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+.process h1{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.process-cards .cards{
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    display: flex;
+}
+  
+.process-cards .card{
+    align-items: center;
+    width: 300px;
+    overflow: hidden;
+    margin: 20px;
+    padding-bottom: 30px;
+    background-color: white;
+    color: black;
+    padding: 0;
+}
+
+.process-cards .card .content{
+    text-align: left;
+    padding: 30px;
+}
+
+.process-cards .card img{
+    width: 100%;
+    max-height: 150px;
+    padding: 0;
+}
+
+.testimonial h2{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+  
+.employee-cards{
+    padding-bottom: 50px;
+}
+
+.employee-cards .cards .card{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    color: black;
+    width: 600px;
+    text-align: left;
+    margin: auto;
+}
+
+.employee-cards .cards .card img{
+    max-width: 200px;
+    margin-right: 50px;
+}
